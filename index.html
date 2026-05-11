@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushi Pandey | AI & Full Stack Developer</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="glow-circle"></div>
+            <div class="loader-text">INITIALIZING...</div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Background Grid & Particles -->
+    <div class="bg-grid"></div>
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button id="theme-toggle" class="theme-btn">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#certifications" class="mobile-link">Certifications</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h2 class="hero-greeting">Welcome to my universe</h2>
+                <h1 class="hero-title">Hi, I'm <span class="gradient-text">Khushi Pandey</span></h1>
+                <h3 class="hero-subtitle">I am a <span class="typing"></span></h3>
+                <p class="hero-desc">
+                    Motivated BCA student passionate about AI automation, web development, and cloud technologies. Building the future with intelligent workflows and scalable applications.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="assets/resume/Khushi_Pandey_Resume.pdf" target="_blank" download class="btn secondary-btn">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/khushi-pandey-dev/" target="_blank" class="social-icon linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/pandey23khushi" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="profile-container">
+                    <div class="profile-glow"></div>
+                    <div class="rotating-glow-ring"></div>
+                    <div class="gradient-border-ring"></div>
+                    
+                    <img src="assets/profile/profile.jpg" 
+                         alt="Khushi Pandey" 
+                         class="profile-img"
+                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80';">
+                         
+                    <!-- Inner floating particles near image -->
+                    <div class="img-particles">
+                        <span class="p-dot p-dot-1"></span>
+                        <span class="p-dot p-dot-2"></span>
+                        <span class="p-dot p-dot-3"></span>
+                    </div>
+                    
+                    <!-- Floating Icons -->
+                    <div class="floating-icon icon-1"><i class="fab fa-python"></i></div>
+                    <div class="floating-icon icon-2"><i class="fab fa-aws"></i></div>
+                    <div class="floating-icon icon-3"><i class="fas fa-robot"></i></div>
+                    <div class="floating-icon icon-4"><i class="fas fa-database"></i></div>
+                    <div class="floating-icon icon-5"><i class="fab fa-github"></i></div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card glass-panel">
+                    <div class="about-icon"><i class="fas fa-user-astronaut"></i></div>
+                    <h3>Who I Am</h3>
+                    <p>I am a final-year Bachelor of Computer Applications (BCA) student at CIMAGE Professional College, Patna, with a strong interest in Python development, web development, AI automation, and workflow automation.</p>
+                    <p>I enjoy building practical projects that combine frontend, backend, databases, APIs, and automation tools. I have hands-on experience with HTML, CSS, JavaScript, PHP, MySQL, Python, GitHub, Postman, AWS basics, n8n, GPT-based chatbots, Twilio, and VAPI.</p>
+                    <p>My goal is to start my career as an entry-level developer where I can apply my technical skills, solve real-world problems, and keep learning modern technologies.</p>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-card glass-panel">
+                        <h4 class="counter" data-target="4">0</h4>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-card glass-panel">
+                        <h4 class="counter" data-target="6">0</h4>
+                        <p>Certifications</p>
+                    </div>
+                    <div class="stat-card glass-panel">
+                        <h4 class="counter" data-target="15">0</h4>
+                        <p>Tech Learned</p>
+                    </div>
+                    <div class="stat-card glass-panel">
+                        <h4 class="counter" data-target="10">0</h4>
+                        <p>Workshops</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="education-timeline glass-panel mt-4">
+                <h3 class="timeline-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                
+                <div class="timeline-container">
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fas fa-university"></i></div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-date">2023 – 2026 (Pursuing)</div>
+                            <h4>Bachelor of Computer Applications (BCA)</h4>
+                            <p class="institution">CIMAGE Professional College, Patna</p>
+                            <p class="timeline-desc">Final-year BCA student focused on Python development, AI automation, workflow automation, web development, databases, APIs, and cloud fundamentals. Passionate about building modern scalable applications and intelligent automation systems.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fas fa-school"></i></div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-date">2020 – 2022</div>
+                            <h4>Intermediate (12th)</h4>
+                            <p class="institution">Jyoti Kunwar Balika Inter College (BSEB), Patna</p>
+                            <p class="timeline-desc">Completed Intermediate (12th) from PCM background with Physics, Chemistry, and Mathematics. Developed strong analytical thinking, problem-solving ability, logical reasoning, and academic fundamentals.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fas fa-book-reader"></i></div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-date">2020</div>
+                            <h4>Matriculation (10th)</h4>
+                            <p class="institution">D K Carmel Residential High School, Ara, Bhojpur</p>
+                            <p class="timeline-desc">Built strong academic foundation and developed early interest in technology, computers, and problem-solving skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Technical <span class="gradient-text">Arsenal</span></h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- AI & Automation -->
+                <div class="skill-category glass-panel">
+                    <div class="category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>AI & Automation</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">GPT AI Chatbots</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">n8n Automation</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AI Calling Agent</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Workflow Automation</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill-category glass-panel">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="skill-category glass-panel">
+                    <div class="category-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud & DevOps</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">AWS EC2</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AWS S3</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CI/CD Fundamentals</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category glass-panel">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Git Bash</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-panel">
+                    <div class="project-visual ai-theme">
+                        <div class="wave-animation">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-sm btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>GPT</span>
+                            <span>n8n</span>
+                            <span>VAPI</span>
+                        </div>
+                        <h3>AI Calling Agent (CIMI)</h3>
+                        <p>AI-powered voice calling agent using GPT, Twilio, n8n, and VAPI for automated inbound/outbound conversations.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-panel">
+                    <div class="project-visual airline-theme">
+                        <i class="fas fa-plane-departure project-icon"></i>
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-sm btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>MySQL</span>
+                            <span>HTML/CSS/JS</span>
+                        </div>
+                        <h3>Airline Management System</h3>
+                        <p>Flight booking and scheduling system with CRUD operations, featuring a Python backend and MySQL database.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-panel">
+                    <div class="project-visual workflow-theme">
+                        <i class="fas fa-project-diagram project-icon"></i>
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-sm btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>n8n</span>
+                            <span>APIs</span>
+                            <span>Automation</span>
+                        </div>
+                        <h3>Automation Workflows</h3>
+                        <p>API-based workflow automation to reduce manual tasks and streamline data transfer processes efficiently.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-panel">
+                    <div class="project-visual cyber-theme">
+                        <i class="fas fa-shield-alt project-icon"></i>
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-sm btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Security</span>
+                        </div>
+                        <h3>Online Voting System</h3>
+                        <p>Secure voting platform with robust authentication, vote validation, result calculation, and transparency features.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="experience-container glass-panel">
+                <div class="exp-timeline">
+                    <div class="exp-item">
+                        <div class="exp-dot">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="exp-content">
+                            <div class="exp-header">
+                                <h3>Full Stack Developer Intern</h3>
+                                <span class="exp-date">Recent</span>
+                            </div>
+                            <h4 class="exp-company">Sikati Enterprises</h4>
+                            <ul class="exp-responsibilities">
+                                <li><i class="fas fa-check-circle"></i> Spearheaded frontend & backend development tasks.</li>
+                                <li><i class="fas fa-check-circle"></i> Handled MySQL database architecture and optimization.</li>
+                                <li><i class="fas fa-check-circle"></i> Integrated complex APIs for enhanced functionality.</li>
+                                <li><i class="fas fa-check-circle"></i> Conducted debugging and routine system maintenance.</li>
+                                <li><i class="fas fa-check-circle"></i> Collaborated closely with cross-functional teams.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Licenses & <span class="gradient-text">Certifications</span></h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="swiper cert-slider">
+                <div class="swiper-wrapper">
+                    <!-- Cert 1 -->
+                    <div class="swiper-slide">
+                        <div class="cert-card glass-panel">
+                            <div class="cert-icon"><i class="fas fa-shield-virus"></i></div>
+                            <h3>Cybersecurity Fundamentals</h3>
+                            <p>IBM SkillsBuild</p>
+                        </div>
+                    </div>
+                    <!-- Cert 2 -->
+                    <div class="swiper-slide">
+                        <div class="cert-card glass-panel">
+                            <div class="cert-icon"><i class="fas fa-robot"></i></div>
+                            <h3>Agentic AI Workshop</h3>
+                            <p>Specialized Training</p>
+                        </div>
+                    </div>
+                    <!-- Cert 3 -->
+                    <div class="swiper-slide">
+                        <div class="cert-card glass-panel">
+                            <div class="cert-icon"><i class="fab fa-python"></i></div>
+                            <h3>Python Certification</h3>
+                            <p>Grade A</p>
+                        </div>
+                    </div>
+                    <!-- Cert 4 -->
+                    <div class="swiper-slide">
+                        <div class="cert-card glass-panel">
+                            <div class="cert-icon"><i class="fas fa-server"></i></div>
+                            <h3>DevOps Workshop</h3>
+                            <p>Specialized Training</p>
+                        </div>
+                    </div>
+                    <!-- Cert 5 -->
+                    <div class="swiper-slide">
+                        <div class="cert-card glass-panel">
+                            <div class="cert-icon"><i class="fas fa-database"></i></div>
+                            <h3>PHP & MySQL</h3>
+                            <p>IIT Bombay</p>
+                        </div>
+                    </div>
+                    <!-- Cert 6 -->
+                    <div class="swiper-slide">
+                        <div class="cert-card glass-panel">
+                            <div class="cert-icon"><i class="fab fa-js"></i></div>
+                            <h3>JavaScript</h3>
+                            <p>IIT Bombay</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <p class="section-subtitle">Have a project idea, collaboration opportunity, or just want to connect? Feel free to reach out.</p>
+                <div class="animated-underline"></div>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Left Contact Card -->
+                <div class="contact-info glass-panel premium-glow">
+                    <h3 class="contact-heading">Let's Talk</h3>
+                    <p class="contact-desc">Passionate about AI automation, technical development, freelancing, and modern web technologies. Always focused on building smart, scalable, and impactful digital solutions while continuously learning new technologies.</p>
+                    
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon glowing-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Bihar, India</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon glowing-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>pandeykhushi1231@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon glowing-icon"><i class="fas fa-bolt"></i></div>
+                            <div>
+                                <h4>Response Time</h4>
+                                <p>Usually replies within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-socials premium-socials">
+                        <a href="https://www.linkedin.com/in/khushi-pandey-dev/" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/pandey23khushi" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" class="social-btn"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Right Contact Form -->
+                <div class="contact-form-container glass-panel premium-glow">
+                    <div class="form-header">
+                        <h3>Send Me a Message</h3>
+                        <p>Fill out the form below and I’ll get back to you as soon as possible.</p>
+                    </div>
+                    
+                    <form id="premium-contact-form" class="contact-form">
+                        <!-- We will handle the POST to FormSubmit via AJAX in script.js -->
+                        <div class="form-row">
+                            <div class="form-group glass-input-wrapper">
+                                <input type="text" name="name" id="name" placeholder="Your Name" required class="glass-input">
+                                <div class="input-glow"></div>
+                            </div>
+                            <div class="form-group glass-input-wrapper">
+                                <input type="email" name="email" id="email" placeholder="Your Email" required class="glass-input">
+                                <div class="input-glow"></div>
+                            </div>
+                        </div>
+                        <div class="form-group glass-input-wrapper">
+                            <input type="text" name="subject" id="subject" placeholder="Subject" required class="glass-input">
+                            <div class="input-glow"></div>
+                        </div>
+                        <div class="form-group glass-input-wrapper">
+                            <textarea name="message" id="message" rows="5" placeholder="Your Message" required class="glass-input"></textarea>
+                            <div class="input-glow"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block btn-large btn-submit-glow">
+                            <span class="btn-text">Send Message</span>
+                            <i class="fas fa-paper-plane send-icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Premium Success Popup -->
+        <div id="success-popup" class="success-popup">
+            <div class="popup-content glass-panel">
+                <div class="success-icon-wrapper">
+                    <i class="fas fa-check-circle popup-icon"></i>
+                </div>
+                <h3>Message sent successfully 🚀</h3>
+                <p>Thank you for reaching out! I'll get back to you soon.</p>
+                <button id="close-popup" class="btn btn-primary btn-sm">Awesome</button>
+            </div>
+        </div>
+        
+        <!-- Loading Overlay -->
+        <div id="form-loading" class="form-loading">
+            <div class="loader-spinner"></div>
+            <p>Transmitting message...</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Khushi Pandey. Designed with <i class="fas fa-heart"></i> & Code.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
