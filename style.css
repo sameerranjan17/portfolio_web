@@ -1072,6 +1072,8 @@ html:not(.dark) .navbar.scrolled {
     overflow: hidden;
 }
 
+
+
 .project-icon {
     font-size: 4rem;
     color: rgba(255,255,255,0.8);
@@ -1084,8 +1086,8 @@ html:not(.dark) .navbar.scrolled {
 }
 
 .ai-theme { background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); }
-.airline-theme { background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); }
-.workflow-theme { background: linear-gradient(135deg, #141e30, #243b55); }
+.wanderlust-theme { background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); }
+.video-theme { background: linear-gradient(135deg, #141e30, #243b55); }
 .cyber-theme { background: linear-gradient(135deg, #000000, #434343); }
 
 /* AI Wave Animation */
@@ -1734,4 +1736,73 @@ footer i {
     background: var(--gradient-primary);
     color: #fff;
     box-shadow: 0 5px 20px rgba(0, 229, 255, 0.4);
+}
+
+ /* Styling for Project 2  */
+/* Custom sizing for the Wanderlust Project Icon */
+.wanderlust-theme .fa-airbnb {
+    font-size: 5.5rem; /* Adjust this to your preferred size */
+    color: rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2));
+    transition: transform var(--transition-normal);
+}
+
+/* Ensure it centers correctly if it gets very large */
+.project-visual.wanderlust-theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Optional: Slight pop effect on hover */
+.project-card:hover .wanderlust-theme .fa-airbnb {
+    transform: scale(1.1) rotate(-5deg);
+    color: #fff;
+}
+
+ /* Styling for Project 3  */
+/* Custom sizing for the Wanderlust Project Icon */
+.video-theme .fa-video {
+    font-size: 5.5rem; /* Adjust this to your preferred size */
+    color: rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2));
+    transition: transform var(--transition-normal);
+}
+
+/* Ensure it centers correctly if it gets very large */
+.project-visual.video-theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Optional: Slight pop effect on hover */
+.project-card:hover .video-theme .fa-airbnb {
+    transform: scale(1.1) rotate(-5deg);
+    color: #fff;
+}
+
+ /* Styling for Project 4  */
+/* Custom sizing for the Wanderlust Project Icon */
+.cyber-theme .fa-arrow-trend-up {
+    font-size: 5.5rem; /* Adjust this to your preferred size */
+   color: var(--accent-cyan);
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2));
+    transition: transform var, filter (--transition-normal);
+}
+
+/* Ensure it centers correctly if it gets very large */
+.project-visual.cyber-theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Optional: Slight pop effect on hover */
+.project-card:hover .cyber-theme .fa-arrow-trend-up {
+    transform: translateY(-10px) scale(1.1);
+    filter: drop-shadow(0 0 25px var(--accent-cyan));
+    color: #fff;
 }

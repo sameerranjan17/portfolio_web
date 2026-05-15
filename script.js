@@ -152,10 +152,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.querySelector('.typing')) {
         new Typed('.typing', {
             strings: [
-                'AI Automation Developer',
-                'Python Developer',
-                'Full Stack Developer',
-                'Workflow Automation Enthusiast'
+                'an AI Automation Developer',
+                'a Python Developer',
+                'a Full Stack Developer',
+                'a Workflow Automation Enthusiast'
             ],
             typeSpeed: 50,
             backSpeed: 30,
