@@ -1087,8 +1087,9 @@ html:not(.dark) .navbar.scrolled {
 
 .ai-theme { background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); }
 .wanderlust-theme { background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); }
-.video-theme { background: linear-gradient(135deg, #141e30, #243b55); }
-.cyber-theme { background: linear-gradient(135deg, #000000, #434343); }
+.video-theme { background: linear-gradient(135deg, #141e30, #0f3460); }
+.cyber-theme { background: linear-gradient(135deg, #141e30, #434343); }
+.hue-hue-theme {background: linear-gradient(135deg, #141e30, #203a43);}
 
 /* AI Wave Animation */
 .wave-animation {
@@ -1791,6 +1792,15 @@ footer i {
     transition: transform var, filter (--transition-normal);
 }
 
+ /* Styling for Project 5  */
+/* Custom sizing for the Wanderlust Project Icon */
+.cyber-theme .fa-spinner {
+    font-size: 5.5rem; /* Adjust this to your preferred size */
+   color: var(--accent-cyan);
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2));
+    transition: transform var, filter (--transition-normal);
+}
+
 /* Ensure it centers correctly if it gets very large */
 .project-visual.cyber-theme {
     display: flex;
@@ -1805,4 +1815,105 @@ footer i {
     transform: translateY(-10px) scale(1.1);
     filter: drop-shadow(0 0 25px var(--accent-cyan));
     color: #fff;
+}
+
+
+
+
+/* Minor Projects Grid Layout */
+.minor-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+/* Compact Glass Panel Card */
+.minor-card {
+  display: flex;
+  flex-direction: row; /* Horizontal alignment for a compact look */
+  align-items: center;
+  border-radius: 12px;
+  padding: 0.75rem;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.minor-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Smaller Icon Thumbnail Container */
+.minor-visual {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Minor Card Content Formatting */
+.minor-content {
+  flex-grow: 1;
+}
+
+.minor-tags {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.25rem;
+}
+
+.minor-tags span {
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #a0aec0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.minor-content h3 {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+  color: #fff;
+}
+
+.minor-content p {
+  font-size: 0.8rem;
+  color: #a0aec0;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* Subtle Hover Overlay */
+.minor-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.minor-visual:hover .minor-overlay {
+  opacity: 1;
+}
+
+.btn-xs {
+  padding: 4px 8px;
+  font-size: 0.7rem;
 }
